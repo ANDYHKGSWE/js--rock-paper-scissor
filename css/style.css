@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: pink;
+
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 10em 10em 10em;
+    grid-template-areas: 
+      "one one one"
+      "two two two"
+      "three three three"
+      "four four four"
+}
+
+one {
+    grid-area: one;
+    background: pink;
+}
+
+two {
+    grid-area: two;
+    background: pink;
+}
+
+three {
+    grid-area: three;
+    background: pink;
+}
+
+four {
+    grid-area: four;
+    background: black;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.player-choice {
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 50px;
+    padding: 0.1em;
+    border: none;
+    margin-right: 1em;
+}
+
+.player-choice i {
+    font-size: 6em;
+    padding: 0.2em;
+}
+
+.scoreboard {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    height: 10em;
+    width: 100%;
+    background: pink;
+}
+
+.game-score {
+    font-size: 2em;
+    transition: 0.8s ease-in-out;
+}
+
+.vs {
+    display: grid;
+    font-size: 1.5em;
+    margin-bottom: -3em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.computer-choice {
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 50px;
+    padding: 0.1em;
+    border: none;
+    margin-right: 1em;
+}
+
+.computer-choice i {
+    font-size: 6em;
+    padding: 0.2em;
+}
+
+.score-message {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    background:hsla(340, 57%, 75%, 0.70);
+    height: 2em;
+    width: 100%;
+    margin-top: 2em;
+    border-top: 1px solid rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+}
+
+.restart-game {
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.restart-button {
+    background: hsl(340, 57%, 75%);
+    margin: auto;
+    font-size: 1em;
+    font-weight: bold;
+    width: 15em;
+    height: 3em;
+    border-radius: 50px;
+    border: none;
+    margin-top: 2em;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+    transition: 0.5s ease-out;
+}
+
+.restart-button:hover {
+    background: palevioletred;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+	background: pink;
+}
+
+.rpsButton {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 6em;
+    border-radius: 50px;
+    padding: 0.1em;
+    margin: 4px;
+    border: none;
+    margin-top: 0.8em;
+    background: hsl(340, 57%, 75%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+    border: 1px solid white;
+    transition: 0.5s ease-out;
+}
+
+.rpsButton:hover {
+    background: palevioletred;
+    cursor: pointer;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
